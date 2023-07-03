@@ -235,7 +235,7 @@ class Flushbar<T> extends StatefulWidget {
       flushbar: this,
     ) as route.FlushbarRoute<T?>;
 
-    return await Navigator.of(context, rootNavigator: false)
+    return await Navigator.of(context, rootNavigator: true)
         .push(flushbarRoute as Route<T>);
   }
 
